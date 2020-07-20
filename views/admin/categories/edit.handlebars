@@ -1,0 +1,13 @@
+<div class="row"></div>
+ 
+    <div class="col-sm-4">
+        <h1> create categories</h1>
+        <form action="/admin/categories/edit/{{category.id}}" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input value={{category.name}} type="text" name="name" class="form-control">
+            </div>
+        <button class="btn btn-primary">Update Category</button>
+        </form>
+        </div>
+</div>

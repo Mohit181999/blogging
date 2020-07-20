@@ -1,0 +1,27 @@
+<h1>comments</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      
+      <th scope="col">ID</th>
+      <th scope="col">Body</th>
+      <th scope="col">Date</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  {{#each comments}}
+    <tr>
+       
+       <!-- <td>{{user}}</td>-->
+        <td>{{id}}</td>
+      <td>{{body}}</td>
+       <td>{{date}}</td>
+      <td><form action="/admin/comments/{{id}}" method="post"><button class="btn btn-danger">DELETE</button>
+      </form></td>
+    
+    </tr>
+     {{/each}}
+  </tbody>
+</table>
